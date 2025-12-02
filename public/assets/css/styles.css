@@ -1,0 +1,222 @@
+/* Custom Font Sizes */
+html {
+  font-size: clamp(12px, 1vw + 0.5rem, 16px);
+}
+
+:root {
+  /* Primary brand color */
+  --primary: #0a381c;
+  --primary-foreground: #fff;
+
+  /* Secondary accent color */
+  --secondary: #2ee378;
+  --secondary-foreground: #0a381c;
+
+  /* Error/danger color */
+  --error: #ff4444;
+  --error-foreground: #fff;
+
+  /* Page background and text */
+  --background: #fff;
+  --foreground: #0a381c;
+
+  /* DaisyUI expected variable names */
+  --color-primary: #0a381c;
+  --color-primary-content: #fff;
+  --color-secondary: #2ee378;
+  --color-secondary-content: #0a381c;
+  --color-error: #ff4444;
+  --color-error-content: #fff;
+  --color-base-100: #fff;
+  --color-base-content: #0a381c;
+}
+
+.dark {
+  --primary: #2ee378;
+  --primary-foreground: #0a381c;
+  --secondary: #0a381c;
+  --secondary-foreground: #2ee378;
+  --error: #ff4444;
+  --error-foreground: #fff;
+  --background: #181818;
+  --foreground: #fff;
+  --color-primary: #0a381c;
+  --color-primary-content: #2ee378;
+  --color-secondary: #2ee378;
+  --color-secondary-content: #0a381c;
+  --color-error: #ff4444;
+  --color-error-content: #fff;
+  --color-base-100: #181818;
+  --color-base-content: #fff;
+}
+
+body {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+/* Container Styles */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.center_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DaisyUI Customization */
+.collapse-plus > .collapse-title:after {
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+
+/* Swiper Pagination Custom Styles */
+.swiper-pagination {
+  display: flex !important;
+  gap: 12px;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  opacity: 0.8;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: all 200ms ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 36px !important;
+  height: 12px !important;
+  background: #2ee378 !important;
+  border-radius: 9999px !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+/* Swiper Wrapper Linear Timing */
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+  will-change: transform;
+}
+
+/* 3D Hover Effect */
+.hover-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.hover-3d:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
+
+/* Shadow Custom */
+.shadow-testimonialShadow {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Custom Tailwind Extensions */
+.text-8px { font-size: 0.5rem; }
+.text-9px { font-size: 0.5625rem; }
+.text-10px { font-size: 0.625rem; }
+.text-11px { font-size: 0.6875rem; }
+.text-12px { font-size: 0.75rem; }
+.text-13px { font-size: 0.8125rem; }
+.text-14px { font-size: 0.875rem; }
+.text-15px { font-size: 0.9375rem; }
+.text-16px { font-size: 1rem; }
+.text-17px { font-size: 1.0625rem; }
+.text-18px { font-size: 1.125rem; }
+.text-19px { font-size: 1.1875rem; }
+.text-20px { font-size: 1.25rem; }
+.text-21px { font-size: 1.3125rem; }
+.text-22px { font-size: 1.375rem; }
+.text-24px { font-size: 1.5rem; }
+.text-25px { font-size: 1.5625rem; }
+.text-28px { font-size: 1.75rem; }
+.text-30px { font-size: 1.875rem; }
+.text-32px { font-size: 2rem; }
+.text-36px { font-size: 2.25rem; }
+.text-40px { font-size: 2.5rem; }
+.text-42px { font-size: 2.625rem; }
+.text-45px { font-size: 2.8125rem; }
+.text-48px { font-size: 3rem; }
+.text-52px { font-size: 3.25rem; }
+.text-60px { font-size: 3.75rem; }
+
+/* Border Radius Custom */
+.rounded-8px { border-radius: 0.5rem; }
+.rounded-9px { border-radius: 0.5625rem; }
+.rounded-10px { border-radius: 0.625rem; }
+.rounded-11px { border-radius: 0.6875rem; }
+.rounded-12px { border-radius: 0.75rem; }
+.rounded-13px { border-radius: 0.8125rem; }
+.rounded-14px { border-radius: 0.875rem; }
+.rounded-15px { border-radius: 0.9375rem; }
+.rounded-16px { border-radius: 1rem; }
+.rounded-17px { border-radius: 1.0625rem; }
+.rounded-18px { border-radius: 1.125rem; }
+.rounded-19px { border-radius: 1.1875rem; }
+.rounded-20px { border-radius: 1.25rem; }
+.rounded-21px { border-radius: 1.3125rem; }
+.rounded-22px { border-radius: 1.375rem; }
+.rounded-24px { border-radius: 1.5rem; }
+.rounded-30px { border-radius: 1.875rem; }
+.rounded-40px { border-radius: 2.5rem; }
+.rounded-44px { border-radius: 2.75rem; }
+.rounded-58px { border-radius: 3.625rem; }
+.rounded-65px { border-radius: 4.0625rem; }
+.rounded-66px { border-radius: 4.125rem; }
+.rounded-67px { border-radius: 4.1875rem; }
+
+/* Size utilities */
+.size-5 { width: 1.25rem; height: 1.25rem; }
+.size-6 { width: 1.5rem; height: 1.5rem; }
+.size-8 { width: 2rem; height: 2rem; }
+.size-11 { width: 2.75rem; height: 2.75rem; }
+.size-12 { width: 3rem; height: 3rem; }
+.size-16 { width: 4rem; height: 4rem; }
+.size-20 { width: 5rem; height: 5rem; }
+
+/* Gradient Backgrounds */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
