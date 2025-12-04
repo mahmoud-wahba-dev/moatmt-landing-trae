@@ -69,6 +69,58 @@ function initSmoothScroll() {
   });
 }
 
+// Pricing Tabs (Monthly/Yearly)
+function initPricingTabs() {
+  const tabs = document.querySelectorAll('[data-plan-tab]');
+  if (!tabs.length) return;
+
+  const priceValues = document.querySelectorAll('.price-value');
+  const optionPrices = document.querySelectorAll('.option-price');
+  const periodLabels = document.querySelectorAll('.plan-period-label');
+
+  const applyPlanType = (planType) => {
+    // update active/inactive styles and aria
+    tabs.forEach((t) => {
+      const isActive = t.getAttribute('data-plan-tab') === planType;
+      t.setAttribute('aria-selected', String(isActive));
+      // active styles
+      t.classList.toggle('bg-[linear-gradient(179.04deg,#FFFFFF_61.8%,#2EE378_122.92%)]', isActive);
+      t.classList.toggle('!text-[#1C0531]', isActive);
+      // inactive styles
+      t.classList.toggle('bg-white/4', !isActive);
+      t.classList.toggle('text-white', !isActive);
+    });
+
+    // update all prices from data attributes
+    priceValues.forEach((el) => {
+      const val = el.getAttribute(`data-${planType}`);
+      if (val) el.textContent = val;
+    });
+    optionPrices.forEach((el) => {
+      const val = el.getAttribute(`data-${planType}`);
+      if (val) el.textContent = val;
+    });
+
+    // update period labels
+    const label = planType === 'monthly' ? 'شهرياً' : 'سنوياً';
+    periodLabels.forEach((el) => {
+      el.textContent = label;
+    });
+  };
+
+  // initialize based on current aria-selected or default to monthly
+  const selected = Array.from(tabs).find((t) => t.getAttribute('aria-selected') === 'true');
+  applyPlanType(selected ? selected.getAttribute('data-plan-tab') : 'monthly');
+
+  // click handlers
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const planType = tab.getAttribute('data-plan-tab');
+      applyPlanType(planType);
+    });
+  });
+}
+
 // Initialize Swiper for Testimonials
 function initTestimonialSwiper() {
   const testimonialSwiper = document.querySelector('.testimonial-swiper');
@@ -148,6 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initMobileMenu();
   initFAQAccordion();
   initSmoothScroll();
+  initPricingTabs();
 
   // Initialize Swipers if Swiper library is loaded
   if (typeof Swiper !== 'undefined') {
