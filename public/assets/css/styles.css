@@ -4,37 +4,41 @@ html {
 }
 
 :root {
-  /* Primary brand color */
-  --primary: #0a381c;
-  --primary-foreground: #fff;
-
-  /* Secondary accent color */
-  --secondary: #2ee378;
-  --secondary-foreground: #0a381c;
-
-  /* Error/danger color */
-  --error: #ff4444;
-  --error-foreground: #fff;
-
-  /* Page background and text */
-  --background: #fff;
-  --foreground: #0a381c;
-
-  /* DaisyUI expected variable names */
-  --color-primary: #0a381c;
-  --color-primary-content: #fff;
-  --color-secondary: #2ee378;
-  --color-secondary-content: #0a381c;
-  --color-error: #ff4444;
-  --color-error-content: #fff;
-  --color-base-100: #fff;
+  /* User-defined variables */
+  --primary: #0a381c; 
+  --primary-foreground: #fff; 
+  --secondary: #2ee378; 
+  --secondary-foreground: #0a381c; 
+  --error: #f44; 
+  --error-foreground: #fff; 
+  --background: #fff; 
+  --foreground: #0a381c; 
+  --color-primary: #0a381c; 
+  --color-primary-content: #fff; 
+  --color-secondary: #2EE382; 
+  --color-secondary-content: #0a381c; 
+  --color-error: #f44; 
+  --color-error-content: #fff; 
+  --color-base-100: #fff; 
   --color-base-content: #0a381c;
+  
+  /* Missing variables (DaisyUI Defaults) */
+  --color-accent: #37cdbe;
+  --color-accent-content: #163835;
+  --color-neutral: #0a381c;
+  --color-neutral-content: #fff;
+  --color-info: #3abff8;
+  --color-info-content: #002b3d;
+  --color-success: #36d399;
+  --color-success-content: #003320;
+  --color-warning: #fbbd23;
+  --color-warning-content: #382800;
 }
 
-.dark {
-  --primary: #2ee378;
+/* .dark {
+  --primary: red;
   --primary-foreground: #0a381c;
-  --secondary: #0a381c;
+  --secondary: red;
   --secondary-foreground: #2ee378;
   --error: #ff4444;
   --error-foreground: #fff;
@@ -48,7 +52,7 @@ html {
   --color-error-content: #fff;
   --color-base-100: #181818;
   --color-base-content: #fff;
-}
+} */
 
 body {
   font-family: 'IBM Plex Sans Arabic', sans-serif;
@@ -201,7 +205,7 @@ body {
 .size-16 { width: 4rem; height: 4rem; }
 .size-20 { width: 5rem; height: 5rem; }
 
-/* Gradient Backgrounds */
+/* Gradient Backgrounds
 .bg-primary {
   background-color: var(--primary);
 }
@@ -216,7 +220,7 @@ body {
 
 .text-secondary {
   color: var(--secondary);
-}
+} */
 
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
