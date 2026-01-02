@@ -41,11 +41,63 @@ function initMobileMenu() {
 
 // FAQ Accordion
 function initFAQAccordion() {
-  const accordionInputs = document.querySelectorAll('input[name="my-accordion-faq"]');
+  const collapses = document.querySelectorAll('.collapse');
+  if (!collapses.length) return;
 
-  accordionInputs.forEach(input => {
-    input.addEventListener('change', function() {
-      // DaisyUI handles the visual toggle automatically
+  const animate = (content, open) => {
+    if (!content) return;
+    const startHeight = content.offsetHeight;
+    const endHeight = open ? content.scrollHeight : 0;
+    content.style.overflow = 'hidden';
+    content.style.opacity = open ? '1' : '0';
+    content.style.transition = 'height 250ms ease, opacity 250ms ease';
+    content.style.willChange = 'height, opacity';
+    content.style.height = startHeight + 'px';
+    void content.offsetHeight;
+    content.style.height = endHeight + 'px';
+    const cleanup = () => {
+      content.removeEventListener('transitionend', cleanup);
+      content.style.transition = '';
+      content.style.willChange = '';
+      content.style.overflow = '';
+      content.style.height = open ? '' : '0px';
+      content.style.opacity = open ? '' : '0';
+    };
+    content.addEventListener('transitionend', cleanup);
+  };
+
+  collapses.forEach(collapse => {
+    const input = collapse.querySelector('input');
+    const content = collapse.querySelector('.collapse-content');
+    if (!input || !content) return;
+
+    if (input.checked) {
+      content.style.height = '';
+      content.style.opacity = '';
+    } else {
+      content.style.height = '0px';
+      content.style.opacity = '0';
+    }
+
+    input.addEventListener('change', () => {
+      const name = input.name;
+      if (input.type === 'radio' && name) {
+        const group = document.querySelectorAll(`input[name="${name}"]`);
+        group.forEach(i => {
+          const parent = i.closest('.collapse');
+          const c = parent?.querySelector('.collapse-content');
+          if (!c) return;
+          animate(c, i.checked);
+        });
+      } else {
+        animate(content, input.checked);
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (input.checked) {
+        content.style.height = '';
+      }
     });
   });
 }
