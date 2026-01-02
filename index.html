@@ -34,25 +34,21 @@
     <div class="container max-w-full">
       <div class="navbar shadow-sm max-sm:justify-between">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden" id="mobile-menu-button">
+          <details class="dropdown">
+            <summary class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
-            </div>
-            <ul tabindex="-1"
-              class="menu menu-sm dropdown-content text-black bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow hidden"
-              id="mobile-menu">
+            </summary>
+            <ul class="menu menu-sm dropdown-content text-black bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow">
               <li><a href="/">الرئيسية</a></li>
               <li><a href="#video">كيف يشتغل مؤتمت؟</a></li>
               <li><a href="/pricing">الأسعار</a></li>
-              <div class="flex flex-col gap-4 mt-4">
-                <a class="btn btn-secondary" href="#">تسجيل دخول</a>
-                <a class="btn" href="#">تسجيل جديد</a>
-              </div>
+              <li class="mt-2"><a class="btn btn-secondary" href="#">تسجيل دخول</a></li>
+              <li><a class="btn" href="#">تسجيل جديد</a></li>
             </ul>
-          </div>
+          </details>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
               <li><a href="/" class="font-semibold text-base">الرئيسية</a></li>
@@ -85,7 +81,7 @@
   </nav>
 
   <!-- Main Content -->
-  <main class="min-h-[45vh] mt-[68px]">
+  <main class="min-h-[45vh] mt-[45px] sm:mt-[68px]">
     <section class="bg-primary">
 
       <!-- Hero Section -->
@@ -799,7 +795,7 @@
             <p class="font-normal text-22px mb-6">روّاد أعمال وجربوا مؤتمت… شوف رأيهم</p>
           </div>
 
-          <div class="bg-[#F5F5F5] p-16 rounded-[105px] shadow-testimonialShadow max-sm:p-6 max-sm:rounded-[50px]">
+          <div class="bg-[#F5F5F5] lg:p-16 p-4 rounded-[105px] shadow-testimonialShadow max-sm:p-6 max-sm:rounded-[50px]">
             <div class="testimonial-swiper swiper w-full">
               <div class="swiper-wrapper">
                 <!-- Slide 1 -->
@@ -853,10 +849,10 @@
                           </svg>
                         </div>
                       </div>
-                      <h3 class="font-bold text-42px mb-7">
+                      <h3 class="font-bold text-42px mb-7 whitespace-wrap">
                         ‘’ حبيت طريقة عمل الذكاء الاصطناعي<br />والربط مع المتجر والتطور التقني هذا صار ضرورة لنا ! ‘’
                       </h3>
-                      <p class="font-semibold text-22px text-[#4D4D4D]">
+                      <p class="font-semibold text-22px text-[#4D4D4D] whitespace-wrap">
                         ما توقعت يرد كذا، صراحة أنقذني من التوظيف وسهل الشغل على الموظفين!
                       </p>
                     </div>
@@ -914,10 +910,10 @@
                           </svg>
                         </div>
                       </div>
-                      <h3 class="font-bold text-42px mb-7">
+                      <h3 class="font-bold text-42px mb-7 whitespace-wrap">
                         ‘’ الخدمة سريعة ومميزة،<br />فريق الدعم متعاون جدا ! ‘’
                       </h3>
-                      <p class="font-semibold text-22px text-[#4D4D4D]">
+                      <p class="font-semibold text-22px text-[#4D4D4D] whitespace-wrap">
                         خلال شهرين من الاستخدام ضاعفت الطلبات وساعدني الذكاء الاصطناعي في تنظيم الوقت.
                       </p>
                     </div>
@@ -1114,7 +1110,7 @@
               </div>
             </div>
 
-            <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative scale-105">
+            <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative lg:scale-105">
               <div
                 class="absolute -top-[19px] pt-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold shadow-md">
                 الأكثر شعبية</div>

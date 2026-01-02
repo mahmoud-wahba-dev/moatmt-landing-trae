@@ -1,9 +1,9 @@
-        const sections = document.querySelectorAll("section");
+        // const sections = document.querySelectorAll("section");
 
-        [...sections].forEach((section) => {
-          const checkbox = section.querySelector("input");
+        // [...sections].forEach((section) => {
+        //   const checkbox = section.querySelector("input");
 
-          checkbox.addEventListener("change", () => {
-            section.classList.toggle("enable-animation");
-          });
-        });
+        //   checkbox.addEventListener("change", () => {
+        //     section.classList.toggle("enable-animation");
+        //   });
+        // });
