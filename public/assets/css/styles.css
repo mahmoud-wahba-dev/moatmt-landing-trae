@@ -345,3 +345,34 @@ body {
 
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap");
+
+.marquee {
+  --gap: 5rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.enable-animation .marquee__content {
+  animation: scroll 10s linear infinite;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splide Marquee Auto Scroll CDN Example</title>
+    <!-- 1. Include the core Splide CSS from a CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+    <style>
+
+        .app {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            gap: 2em;
+            font-family: 'Montserrat';
+        }
+
+        .splide {
+            max-width: 95%;
+        }
+
+        .splide__slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .splide__slide__container {
+            height: 120px;
+            aspect-ratio: 16/9;
+            background-color: red;
+            border-radius: 0.4em;
+            display: flex;
+            align-items: end;
+            cursor: pointer;
+            transition: background-color 250ms ease-in-out, height 300ms var(--ease-bounce-1);
+        }
+
+        .splide__slide__container h1 {
+            font-family: "Montserrat";
+            margin-left: 1em;
+            color: white;
+        }
+
+        ul:has(.splide__slide__container:hover) .splide__slide__container:not(.splide__slide__container:hover) {
+            background-color: gray;
+            height: 100px;
+        }
+
+        .splide__slide__container h1 {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 250ms ease-in-out, transform 250ms var(--ease-bounce-1);
+        }
+
+        .splide__slide__container:hover h1 {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class='app'>
+        <section class="splide" aria-label="Basic Structure Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 01</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 02</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 03</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 04</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 05</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 10</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 11</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 12</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 13</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 14</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 15</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 16</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 17</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 18</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 19</h1>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <h1>Slide 20</h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        (Hover for Info)
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">
+        </script>
+
+    <!-- 4. Initialize the Splide slider with AutoScroll -->
+    <script>
+        new Splide(".splide", {
+            type: "loop",
+            perPage: 4,
+            arrows: true,
+            pagination: true,
+            focus: "center",
+            gap: "1em"
+        }).mount(window.splide.Extensions);
+
+    </script>
+</body>
+
+</html>

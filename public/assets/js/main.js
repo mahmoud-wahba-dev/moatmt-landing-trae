@@ -167,32 +167,32 @@ function initMoatmtImagesSwiper() {
 }
 
 // Initialize Partner Carousel
-function initPartnerCarousel() {
-  const partnerSwiper = document.querySelector('.partner-swiper');
-  if (!partnerSwiper) return;
+// function initPartnerCarousel() {
+//   const partnerSwiper = document.querySelector('.partner-swiper');
+//   if (!partnerSwiper) return;
 
-  new Swiper('.partner-swiper', {
-    // modules removed for CDN bundle usage
-    slidesPerView: 'auto',
-    loop: true,
-    spaceBetween: 24,
-    speed: 7000,
-    autoplay: {
-      delay: 1,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-    },
-    freeMode: {
-      enabled: true,
-      momentum: true,
-      momentumRatio: 0.5,
-      sticky: false,
-    },
-    allowTouchMove: false,
-    direction: 'horizontal',
-    // rtl handled by document direction; no explicit option
-  });
-}
+//   new Swiper('.partner-swiper', {
+//     // modules removed for CDN bundle usage
+//     slidesPerView: 'auto',
+//     loop: true,
+//     spaceBetween: 24,
+//     speed: 7000,
+//     autoplay: {
+//       delay: 1,
+//       disableOnInteraction: false,
+//       pauseOnMouseEnter: true,
+//     },
+//     freeMode: {
+//       enabled: true,
+//       momentum: true,
+//       momentumRatio: 0.5,
+//       sticky: false,
+//     },
+//     allowTouchMove: false,
+//     direction: 'horizontal',
+//     // rtl handled by document direction; no explicit option
+//   });
+// }
 
 // Initialize all on DOM ready
 document.addEventListener('DOMContentLoaded', function() {
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (typeof Swiper !== 'undefined') {
     initTestimonialSwiper();
     initMoatmtImagesSwiper();
-    initPartnerCarousel();
+    // initPartnerCarousel();
   }
 });
 
@@ -248,3 +248,6 @@ function initTestimonialNavigation() {
 window.addEventListener('load', function() {
   initTestimonialNavigation();
 });
+
+
+
