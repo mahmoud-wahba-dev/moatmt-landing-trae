@@ -129,6 +129,7 @@ function initPricingTabs() {
   const priceValues = document.querySelectorAll('.price-value');
   const optionPrices = document.querySelectorAll('.option-price');
   const periodLabels = document.querySelectorAll('.plan-period-label');
+  const planDurations = document.querySelectorAll('.plan-duration');
 
   const applyPlanType = (planType) => {
     // update active/inactive styles and aria
@@ -149,6 +150,11 @@ function initPricingTabs() {
       if (val) el.textContent = val;
     });
     optionPrices.forEach((el) => {
+      const val = el.getAttribute(`data-${planType}`);
+      if (val) el.textContent = val;
+    });
+
+    planDurations.forEach((el) => {
       const val = el.getAttribute(`data-${planType}`);
       if (val) el.textContent = val;
     });
