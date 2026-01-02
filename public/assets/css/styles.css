@@ -5,23 +5,23 @@ html {
 
 :root {
   /* User-defined variables */
-  --primary: #0a381c; 
-  --primary-foreground: #fff; 
-  --secondary: #2ee378; 
-  --secondary-foreground: #0a381c; 
-  --error: #f44; 
-  --error-foreground: #fff; 
-  --background: #fff; 
-  --foreground: #0a381c; 
-  --color-primary: #0a381c; 
-  --color-primary-content: #fff; 
-  --color-secondary: #2EE382; 
-  --color-secondary-content: #0a381c; 
-  --color-error: #f44; 
-  --color-error-content: #fff; 
-  --color-base-100: #fff; 
+  --primary: #0a381c;
+  --primary-foreground: #fff;
+  --secondary: #2ee378;
+  --secondary-foreground: #0a381c;
+  --error: #f44;
+  --error-foreground: #fff;
+  --background: #fff;
+  --foreground: #0a381c;
+  --color-primary: #0a381c;
+  --color-primary-content: #fff;
+  --color-secondary: #2ee382;
+  --color-secondary-content: #0a381c;
+  --color-error: #f44;
+  --color-error-content: #fff;
+  --color-base-100: #fff;
   --color-base-content: #0a381c;
-  
+
   /* Missing variables (DaisyUI Defaults) */
   --color-accent: #37cdbe;
   --color-accent-content: #163835;
@@ -55,7 +55,7 @@ html {
 } */
 
 body {
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 /* Container Styles */
@@ -143,67 +143,188 @@ body {
 }
 
 /* Custom Tailwind Extensions */
-.text-8px { font-size: 0.5rem; }
-.text-9px { font-size: 0.5625rem; }
-.text-10px { font-size: 0.625rem; }
-.text-11px { font-size: 0.6875rem; }
-.text-12px { font-size: 0.75rem; }
-.text-13px { font-size: 0.8125rem; }
-.text-14px { font-size: 0.875rem; }
-.text-15px { font-size: 0.9375rem; }
-.text-16px { font-size: 1rem; }
-.text-17px { font-size: 1.0625rem; }
-.text-18px { font-size: 1.125rem; }
-.text-19px { font-size: 1.1875rem; }
-.text-20px { font-size: 1.25rem; }
-.text-21px { font-size: 1.3125rem; }
-.text-22px { font-size: 1.375rem; }
-.text-24px { font-size: 1.5rem; }
-.text-25px { font-size: 1.5625rem; }
-.text-28px { font-size: 1.75rem; }
-.text-30px { font-size: 1.875rem; }
-.text-32px { font-size: 2rem; }
-.text-36px { font-size: 2.25rem; }
-.text-40px { font-size: 2.5rem; }
-.text-42px { font-size: 2.625rem; }
-.text-45px { font-size: 2.8125rem; }
-.text-48px { font-size: 3rem; }
-.text-52px { font-size: 3.25rem; }
-.text-60px { font-size: 3.75rem; }
+.text-8px {
+  font-size: 0.5rem;
+}
+.text-9px {
+  font-size: 0.5625rem;
+}
+.text-10px {
+  font-size: 0.625rem;
+}
+.text-11px {
+  font-size: 0.6875rem;
+}
+.text-12px {
+  font-size: 0.75rem;
+}
+.text-13px {
+  font-size: 0.8125rem;
+}
+.text-14px {
+  font-size: 0.875rem;
+}
+.text-15px {
+  font-size: 0.9375rem;
+}
+.text-16px {
+  font-size: 1rem;
+}
+.text-17px {
+  font-size: 1.0625rem;
+}
+.text-18px {
+  font-size: 1.125rem;
+}
+.text-19px {
+  font-size: 1.1875rem;
+}
+.text-20px {
+  font-size: 1.25rem;
+}
+.text-21px {
+  font-size: 1.3125rem;
+}
+.text-22px {
+  font-size: 1.375rem;
+}
+.text-24px {
+  font-size: 1.5rem;
+}
+.text-25px {
+  font-size: 1.5625rem;
+}
+.text-28px {
+  font-size: 1.75rem;
+}
+.text-30px {
+  font-size: 1.875rem;
+}
+.text-32px {
+  font-size: 2rem;
+}
+.text-36px {
+  font-size: 2.25rem;
+}
+.text-40px {
+  font-size: 2.5rem;
+}
+.text-42px {
+  font-size: 2.625rem;
+}
+.text-45px {
+  font-size: 2.8125rem;
+}
+.text-48px {
+  font-size: 3rem;
+}
+.text-52px {
+  font-size: 3.25rem;
+}
+.text-60px {
+  font-size: 3.75rem;
+}
 
 /* Border Radius Custom */
-.rounded-8px { border-radius: 0.5rem; }
-.rounded-9px { border-radius: 0.5625rem; }
-.rounded-10px { border-radius: 0.625rem; }
-.rounded-11px { border-radius: 0.6875rem; }
-.rounded-12px { border-radius: 0.75rem; }
-.rounded-13px { border-radius: 0.8125rem; }
-.rounded-14px { border-radius: 0.875rem; }
-.rounded-15px { border-radius: 0.9375rem; }
-.rounded-16px { border-radius: 1rem; }
-.rounded-17px { border-radius: 1.0625rem; }
-.rounded-18px { border-radius: 1.125rem; }
-.rounded-19px { border-radius: 1.1875rem; }
-.rounded-20px { border-radius: 1.25rem; }
-.rounded-21px { border-radius: 1.3125rem; }
-.rounded-22px { border-radius: 1.375rem; }
-.rounded-24px { border-radius: 1.5rem; }
-.rounded-30px { border-radius: 1.875rem; }
-.rounded-40px { border-radius: 2.5rem; }
-.rounded-44px { border-radius: 2.75rem; }
-.rounded-58px { border-radius: 3.625rem; }
-.rounded-65px { border-radius: 4.0625rem; }
-.rounded-66px { border-radius: 4.125rem; }
-.rounded-67px { border-radius: 4.1875rem; }
+.rounded-8px {
+  border-radius: 0.5rem;
+}
+.rounded-9px {
+  border-radius: 0.5625rem;
+}
+.rounded-10px {
+  border-radius: 0.625rem;
+}
+.rounded-11px {
+  border-radius: 0.6875rem;
+}
+.rounded-12px {
+  border-radius: 0.75rem;
+}
+.rounded-13px {
+  border-radius: 0.8125rem;
+}
+.rounded-14px {
+  border-radius: 0.875rem;
+}
+.rounded-15px {
+  border-radius: 0.9375rem;
+}
+.rounded-16px {
+  border-radius: 1rem;
+}
+.rounded-17px {
+  border-radius: 1.0625rem;
+}
+.rounded-18px {
+  border-radius: 1.125rem;
+}
+.rounded-19px {
+  border-radius: 1.1875rem;
+}
+.rounded-20px {
+  border-radius: 1.25rem;
+}
+.rounded-21px {
+  border-radius: 1.3125rem;
+}
+.rounded-22px {
+  border-radius: 1.375rem;
+}
+.rounded-24px {
+  border-radius: 1.5rem;
+}
+.rounded-30px {
+  border-radius: 1.875rem;
+}
+.rounded-40px {
+  border-radius: 2.5rem;
+}
+.rounded-44px {
+  border-radius: 2.75rem;
+}
+.rounded-58px {
+  border-radius: 3.625rem;
+}
+.rounded-65px {
+  border-radius: 4.0625rem;
+}
+.rounded-66px {
+  border-radius: 4.125rem;
+}
+.rounded-67px {
+  border-radius: 4.1875rem;
+}
 
 /* Size utilities */
-.size-5 { width: 1.25rem; height: 1.25rem; }
-.size-6 { width: 1.5rem; height: 1.5rem; }
-.size-8 { width: 2rem; height: 2rem; }
-.size-11 { width: 2.75rem; height: 2.75rem; }
-.size-12 { width: 3rem; height: 3rem; }
-.size-16 { width: 4rem; height: 4rem; }
-.size-20 { width: 5rem; height: 5rem; }
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.size-8 {
+  width: 2rem;
+  height: 2rem;
+}
+.size-11 {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.size-12 {
+  width: 3rem;
+  height: 3rem;
+}
+.size-16 {
+  width: 4rem;
+  height: 4rem;
+}
+.size-20 {
+  width: 5rem;
+  height: 5rem;
+}
 
 /* Gradient Backgrounds
 .bg-primary {
@@ -223,4 +344,4 @@ body {
 } */
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap");
