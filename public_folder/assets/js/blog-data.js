@@ -5,7 +5,7 @@ const blogPosts = [
     excerpt:
       "تحكم في اعمالك بسهولة عبر الواتساب , تواصل مع عملائك و ضبط وقتك بكل يسر،تستطيع تغذية الذكاء الاصطناعي وسيقوم بالرد عنك في واتساب اعمالك في اي وقت كان ويتحدث مع العملاء ويناقشهم كشخص حقيقي.",
     date: "2024-07-24",
-    image: "/public/blog/blog1.webp",
+    image: "/public_folder/blog/blog1.webp",
     content: `
       <h3>مقدمة</h3>
       <p>منصة مؤتمت تساعد التجار على ربط متاجرهم بخدمة واتساب باستخدام حلول ذكية لأتمتة المحادثات.</p>
@@ -24,7 +24,7 @@ const blogPosts = [
     excerpt:
       "تقديم استشارات متخصصة لتعزيز الكفاءة في إدارة الأعمال، ودمج تقنيات جديدة لتحسين الإنتاجية وتحقيق الأهداف.",
     date: "2024-07-24",
-    image: "/public/blog/blog2.webp",
+    image: "/public_folder/blog/blog2.webp",
     content: `
       <div class="prose prose-lg max-w-none font-normal text-black text-20px space-y-4">
         <p>
@@ -123,7 +123,7 @@ const blogPosts = [
     title: "تسويق رقمي",
     excerpt: "استراتيجية تسويقية مبتكرة تركز على جذب العملاء المحتملين من خلال وسائل التواصل الاجتماعي، والبريد الإلكتروني، والمحتوى الرقمي.",
     date: "2024-07-22",
-    image: "/public/blog/blog1.webp",
+    image: "/public_folder/blog/blog1.webp",
     content: `
       <h3>نظرة عامة</h3>
       <p>التسويق الرقمي يشمل حملات عبر الرسائل المباشرة، الإعلانات والـcontent.</p>
@@ -140,7 +140,7 @@ const blogPosts = [
     title: "تحليل بيانات",
     excerpt: "خدمات تحليل بيانات متطورة تساعدك على اتخاذ قرارات مستنيرة بناءً على البيانات، مع توفير تقارير دورية لمتابعة الأداء.",
     date: "2024-07-30",
-    image: "/public/blog/blog1.webp",
+    image: "/public_folder/blog/blog1.webp",
     content: `
       <h3>أهمية التحليل</h3>
       <p>تحليل المحادثات يساعدك في فهم سلوك العملاء وتحسين سير العمل.</p>
