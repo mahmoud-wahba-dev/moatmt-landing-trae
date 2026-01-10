@@ -403,3 +403,9 @@ body {
     transform: translateX(-50%);
   }
 }
+.iti {
+  width: 100%;
+}
+.iti__country-list {
+  inset-inline-end: 0;
+}

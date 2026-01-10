@@ -40,3 +40,13 @@ setupPasswordToggle(
 	"register_eye_icon_confirm"
 );
 
+const registerPhoneInput = document.getElementById("register_phone_input");
+if (registerPhoneInput && window.intlTelInput) {
+	window.intlTelInput(registerPhoneInput, {
+		initialCountry: "sa",
+		separateDialCode: true,
+		autoPlaceholder: "aggressive",
+		utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/js/utils.js",
+	});
+}
+
