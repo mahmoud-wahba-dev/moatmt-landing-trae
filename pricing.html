@@ -94,18 +94,32 @@
         <div class="text-center text-white mb-16"><p class="font-semibold  mb-6  ">الباقات</p><h2 class="font-semibold text-52px  mb-5 ">اختر الباقة المناسبة لحجم مشروعك </h2>
           
           <p class="font-normal text-22px  mb-6">تجربة 5 ايام مجاناً </p></div>
-        <div>
-          <div
-            class="flex flex-wrap justify-center gap-y-4 bg-white/9 w-fit rounded-40px max-w-md mx-auto p-2.5 backdrop-blur-3xl mb-14"
-            id="pricing-tabs" role="tablist">
-            <button
-              class="bg-[linear-gradient(179.04deg,#FFFFFF_61.8%,#2EE378_122.92%)] h-[58px] px-20 py-4 rounded-40px text-14px mx-2 font-bold !text-[#1C0531]"
-              data-plan-tab="monthly" role="tab" aria-selected="true">شهري</button>
-            <button class="bg-white/4 h-[58px] px-20 py-4 rounded-40px text-14px mx-2 font-bold text-white"
-              data-plan-tab="yearly" role="tab" aria-selected="false">سنوي</button>
-          </div>
+        
+        <!-- Daisy UI Tabs -->
+        <div class="tabs tabs-boxed justify-center mb-8">
+          <button class="tab tab-active" data-tab="salla-packages">باقات سله</button>
+          <button class="tab" data-tab="zid-packages">باقات زد</button>
+          <button class="tab" data-tab="shopify-packages">باقات شوبيفاي</button>
+          <button class="tab" data-tab="other-packages">باقات أخرى</button>
+        </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-8">
+        <!-- Tab Content -->
+        <div class="tab-content">
+          <!-- باقات سله Tab -->
+          <div id="salla-packages" class="tab-pane active">
+            <div class="flex justify-center mb-14">
+              <div
+                class="flex flex-wrap justify-center gap-y-4 bg-white/9 w-fit rounded-40px max-w-md mx-auto p-2.5 backdrop-blur-3xl"
+                id="pricing-tabs" role="tablist">
+                <button
+                  class="bg-[linear-gradient(179.04deg,#FFFFFF_61.8%,#2EE378_122.92%)] h-[58px] px-20 py-4 rounded-40px text-14px mx-2 font-bold !text-[#1C0531]"
+                  data-plan-tab="monthly" role="tab" aria-selected="true">شهري</button>
+                <button class="bg-white/4 h-[58px] px-20 py-4 rounded-40px text-14px mx-2 font-bold text-white"
+                  data-plan-tab="yearly" role="tab" aria-selected="false">سنوي</button>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-8">
             <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative">
               <div class="flex flex-col items-center gap-3 mb-6">
                 <div class="bg-[#0A381C0D] size-16 rounded-16px center_flex"><svg stroke="currentColor"
@@ -595,6 +609,778 @@
             </div>
           </div>
         </div>
+        
+        <!-- باقات زد Tab -->
+        <div id="zid-packages" class="tab-pane hidden">
+          <div class="flex justify-center mb-14">
+            <div
+              class="flex flex-wrap justify-center gap-y-4 bg-white/9 w-fit rounded-40px max-w-md mx-auto p-2.5 backdrop-blur-3xl"
+              id="pricing-tabs-zid" role="tablist">
+              <button
+                class="bg-[linear-gradient(179.04deg,#FFFFFF_61.8%,#2EE378_122.92%)] h-[58px] px-20 py-4 rounded-40px text-14px mx-2 font-bold !text-[#1C0531]"
+                data-plan-tab="monthly-zid" role="tab" aria-selected="true">شهري</button>
+              <button class="bg-white/4 h-[58px] px-20 py-4 rounded-40px text-14px mx-2 font-bold text-white"
+                data-plan-tab="yearly-zid" role="tab" aria-selected="false">سنوي</button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-8">
+            <!-- Same pricing cards as first tab but for Zid -->
+            <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative">
+              <div class="flex flex-col items-center gap-3 mb-6">
+                <div class="bg-[#0A381C0D] size-16 rounded-16px center_flex"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="text-primary text-[2rem]"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6l277.2 0c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z">
+                    </path>
+                  </svg></div>
+                <h3 class="font-semibold text-24px text-black">باقة بوت - زد</h3>
+                <p class="text-base font-normal text-[#595959]">مثالية للمشاريع الناشئة والأفراد</p>
+              </div>
+              <div class="my-4 text-center rounded-16px bg-[linear-gradient(180deg,#F8F8F8_0%,#F0F0F0_100%)] p-6">
+                <div class="text-60px font-bold text-primary center_flex gap-2"><span class="price-value"
+                    data-monthly="55" data-yearly="500">55</span> <span class="text-lg font-normal"><img
+                      src="/public_folder/home/ryal.svg" alt="Currency" width="30" height="32" /></span></div>
+                <div class="center_flex gap-4 font-normal text-14px text-[#595959]">
+                  <p>غير شامل الضريبة</p>
+                  <div>•</div>
+                  <p class="plan-duration" data-monthly="30 يوم" data-yearly="365 يوم">30 يوم</p>
+                </div>
+              </div>
+              <div class="mb-6"><a href="/contact"
+                  class="btn btn-primary btn-block rounded-14px h-[52px] text-base font-normal">تجربة مجانية 5 أيام</a>
+              </div>
+              <div class="mb-6">
+                <hr class="text-black/10" />
+              </div>
+              <p class="font-normal text-black text-14px mb-3">المميزات المتضمنة:</p>
+              <ul class="flex-1 mb-7 space-y-2 text-right">
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">بوت الرد الآلي (عادي)</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الترحيب التلقائي</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الرسائل التلقائية</span></li>
+              </ul>
+            </div>
+
+            <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative lg:scale-105">
+              <div
+                class="absolute -top-[19px] pt-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold shadow-md">
+                الأكثر شعبية</div>
+              <div class="flex flex-col items-center gap-3 mb-6">
+                <div class="bg-[#0A381C0D] size-16 rounded-16px center_flex"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true"
+                    class="text-primary text-[2rem]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                      clip-rule="evenodd"></path>
+                  </svg></div>
+                <h3 class="font-semibold text-24px text-black">باقة سويتش - زد</h3>
+                <p class="text-base font-normal text-[#595959]">الأفضل للشركات الصغيرة والمتوسطة</p>
+              </div>
+              <div class="my-4 text-center rounded-16px bg-[linear-gradient(180deg,#F8F8F8_0%,#F0F0F0_100%)] p-6">
+                <div class="text-60px font-bold text-primary center_flex gap-2"><span class="price-value"
+                    data-monthly="99" data-yearly="900">99</span> <span class="text-lg font-normal"><img
+                      src="/public_folder/home/ryal.svg" alt="Currency" width="30" height="32" /></span></div>
+                <div class="center_flex gap-4 font-normal text-14px text-[#595959]">
+                  <p>غير شامل الضريبة</p>
+                  <div>•</div>
+                  <p class="plan-duration" data-monthly="30 يوم" data-yearly="365 يوم">30 يوم</p>
+                </div>
+              </div>
+              <div class="mb-6"><a href="/contact"
+                  class="btn btn-primary btn-block rounded-14px h-[52px] text-base font-normal">تجربة مجانية 5 أيام</a>
+              </div>
+              <div class="mb-6">
+                <hr class="text-black/10" />
+              </div>
+              <p class="font-normal text-black text-14px mb-3">المميزات المتضمنة:</p>
+              <ul class="flex-1 mb-7 space-y-2 text-right">
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">بوت الرد الآلي (عادي)</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الترحيب التلقائي</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الرسائل التلقائية</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">رسائل OTP (للمتاجر)</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">رسائل التقييم</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">استرداد السلات</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">سجل الإشعارات</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">أيقونة المحادثة بالموقع</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">تكامل واتساب API</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">عدد الرسائل: 250K</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">جلسات واتساب: 3</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">رسائل الحملات التسويقية: 5K</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">بوت الذكاء الاصطناعي المتقدّم</span>
+                </li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الرد على حالات الطلب الذكي</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">تحويل للموظف البشري (هاندوفر)</span>
+                </li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">التقارير والإحصاءات</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">مزامنة العملاء</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">لوحة تحكم مخصّصة</span></li>
+
+<li class="flex items-center gap-2"><span class="inline-block rounded-full size-5 bg-[#D1D5DC] center_flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" class="text-white size-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></span><span class="text-base font-medium text-14px font-normal text-[#99A1AF] line-through">تحكم توقيت عمل الذكاء الاصطناعي</span></li>
+              </ul>
+              <div class="mb-6">
+                <hr class="text-black/10" />
+              </div>
+              <p class="font-normal text-black text-14px mb-4">اشترك عبر:</p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div class="bg-[#CFF7EE] rounded-12px py-4 flex flex-col gap-2 items-center justify-center text-center">
+                  <div class="h-6 mb-1.5"><img src="./public_folder/home/salla.svg" alt="salla" width="64" height="24" /></div>
+                  <div class="flex items-center gap-2 text-12px text-[#004D5A] justify-center"><span
+                      class="font-semibold text-[12px] option-price" data-monthly="99" data-yearly="900">99</span><img
+                      src="./public_folder/home/ryal_colored.svg" alt="currency" width="16" height="14" />
+                    <div class="text-[#004D5A] plan-period-label">شهرياً</div>
+                  </div>
+                </div>
+                <div class="bg-[#64943E] rounded-12px py-4 flex flex-col gap-2 items-center justify-center text-center">
+                  <div class="h-6 mb-1.5"><img src="./public_folder/home/shopify.svg" alt="shopify" width="64" height="24" />
+                  </div>
+                  <div class="flex items-center gap-2 text-12px text-white justify-center"><span
+                      class="font-semibold text-[12px] option-price" data-monthly="99" data-yearly="900">99</span><img
+                      src="./public_folder/home/ryal_white.svg" alt="currency" width="16" height="14" />
+                    <div class="text-white plan-period-label">شهرياً</div>
+                  </div>
+                </div>
+                <div class="bg-[#3C1C54] rounded-12px py-4 flex flex-col gap-2 items-center justify-center text-center">
+                  <div class="h-6 mb-1.5"><img src="./public_folder/home/zid.svg" alt="zid" width="64" height="24" /></div>
+                  <div class="flex items-center gap-2 text-12px text-white justify-center"><span
+                      class="font-semibold text-[12px] option-price" data-monthly="99" data-yearly="900">99</span><img
+                      src="./public_folder/home/ryal_white.svg" alt="currency" width="16" height="14" />
+                    <div class="text-white plan-period-label">شهرياً</div>
+                  </div>
+                </div>
+                <div class="bg-primary rounded-12px py-4 flex flex-col gap-2 items-center justify-center text-center">
+                  <div class="h-6 mb-1.5"><img src="./public_folder/home/moatmt.svg" alt="moatmt" width="64" height="24" />
+                  </div>
+                  <div class="flex items-center gap-2 text-12px text-white justify-center"><span
+                      class="font-semibold text-[12px] option-price" data-monthly="99" data-yearly="900">99</span><img
+                      src="./public_folder/home/ryal_white.svg" alt="currency" width="16" height="14" />
+                    <div class="text-white plan-period-label">شهرياً</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative">
+              <div class="flex flex-col items-center gap-3 mb-6">
+                <div class="bg-[#0A381C0D] size-16 rounded-16px center_flex"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-primary text-[2rem]"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288l111.5 0L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7l-111.5 0L349.4 44.6z">
+                    </path>
+                  </svg></div>
+                <h3 class="font-semibold text-24px text-black">باقة كنترول - زد</h3>
+                <p class="text-base font-normal text-[#595959]">حل متكامل للشركات الكبيرة</p>
+              </div>
+              <div class="my-4 text-center rounded-16px bg-[linear-gradient(180deg,#F8F8F8_0%,#F0F0F0_100%)] p-6">
+                <div class="text-60px font-bold text-primary center_flex gap-2"><span class="price-value"
+                    data-monthly="299" data-yearly="2700">299</span> <span class="text-lg font-normal"><img
+                      src="/public_folder/home/ryal.svg" alt="Currency" width="30" height="32" /></span></div>
+                <div class="center_flex gap-4 font-normal text-14px text-[#595959]">
+                  <p>غير شامل الضريبة</p>
+                  <div>•</div>
+                  <p class="plan-duration" data-monthly="30 يوم" data-yearly="365 يوم">30 يوم</p>
+                </div>
+              </div>
+              <div class="mb-6"><a href="/contact"
+                  class="btn btn-primary btn-block rounded-14px h-[52px] text-base font-normal">تجربة مجانية 5 أيام</a>
+              </div>
+              <div class="mb-6">
+                <hr class="text-black/10" />
+              </div>
+              <p class="font-normal text-black text-14px mb-3">المميزات المتضمنة:</p>
+              <ul class="flex-1 mb-7 space-y-2 text-right">
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">بوت الرد الآلي (عادي)</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">بوت الذكاء الاصطناعي المتقدّم</span>
+                </li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الترحيب التلقائي</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الرسائل التلقائية</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">رسائل OTP (للمتاجر)</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">رسائل التقييم</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">استرداد السلات</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">سجل الإشعارات</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">أيقونة المحادثة بالموقع</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">تكامل واتساب API</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">عدد الرسائل: 1M</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">جلسات واتساب: 5</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">رسائل الحملات التسويقية: 20K</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الرد على حالات الطلب الذكي</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">تحويل للموظف البشري (هاندوفر)</span>
+                </li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">تحكم بتوقيت عمل الذكاء الاصطناعي</span>
+                </li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">التقارير والإحصاءات المتقدمة</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">مزامنة العملاء</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">لوحة تحكم مخصّصة</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">مستخدمين غير محدودين</span></li>
+              </ul>
+              <div class="mb-6">
+                <hr class="text-black/10" />
+              </div>
+              <p class="font-normal text-black text-14px mb-4">اشترك عبر:</p>
+              <div class="grid grid-cols-1 sm:grid-cols-12 gap-1 ">
+                <div
+                  class="sm:col-span-12 bg-[#CFF7EE] rounded-12px py-4 flex flex-col gap-2 items-center justify-center text-center">
+                  <div class="h-6 mb-1.5"><img src="./public_folder/home/salla.svg" alt="salla" width="64" height="24" /></div>
+                  <div class="flex items-center gap-2 text-12px text-[#004D5A] justify-center"><span
+                      class="font-semibold text-[12px] option-price" data-monthly="299" data-yearly="900">99</span><img
+                      src="./public_folder/home/ryal_colored.svg" alt="currency" width="16" height="14" />
+                    <div class="text-[#004D5A] plan-period-label">شهرياً</div>
+                  </div>
+                </div>
+                <div
+                  class="sm:col-span-6 bg-[#3C1C54] rounded-12px py-4 flex flex-col gap-2 items-center justify-center text-center">
+                  <div class="h-6 mb-1.5"><img src="./public_folder/home/zid.svg" alt="zid" width="64" height="24" /></div>
+                  <div class="flex items-center gap-2 text-12px text-white justify-center"><span
+          </div>
+        </div>
+        
+        <!-- باقات شوبيفاي Tab -->
+        <div id="shopify-packages" class="tab-pane hidden">
+          <div class="flex justify-center mb-14">
+            <div
+              class="flex flex-wrap justify-center gap-y-4 bg-white/9 w-fit rounded-40px max-w-md mx-auto p-2.5 backdrop-blur-3xl"
+              id="pricing-tabs-shopify" role="tablist">
+              <button
+                class="bg-[linear-gradient(179.04deg,#FFFFFF_61.8%,#2EE378_122.92%)] h-[58px] px-20 py-4 rounded-40px text-14px mx-2 font-bold !text-[#1C0531]"
+                data-plan-tab="monthly-shopify" role="tab" aria-selected="true">شهري</button>
+              <button class="bg-white/4 h-[58px] px-20 py-4 rounded-40px text-14px mx-2 font-bold text-white"
+                data-plan-tab="yearly-shopify" role="tab" aria-selected="false">سنوي</button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-8">
+            <!-- Same pricing cards as first tab but for Shopify -->
+            <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative">
+              <div class="flex flex-col items-center gap-3 mb-6">
+                <div class="bg-[#0A381C0D] size-16 rounded-16px center_flex"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="text-primary text-[2rem]"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6l277.2 0c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z">
+                    </path>
+                  </svg></div>
+                <h3 class="font-semibold text-24px text-black">باقة بوت - شوبيفاي</h3>
+                <p class="text-base font-normal text-[#595959]">مثالية للمشاريع الناشئة والأفراد</p>
+              </div>
+              <div class="my-4 text-center rounded-16px bg-[linear-gradient(180deg,#F8F8F8_0%,#F0F0F0_100%)] p-6">
+                <div class="text-60px font-bold text-primary center_flex gap-2"><span class="price-value"
+                    data-monthly="55" data-yearly="500">55</span> <span class="text-lg font-normal"><img
+                      src="/public_folder/home/ryal.svg" alt="Currency" width="30" height="32" /></span></div>
+                <div class="center_flex gap-4 font-normal text-14px text-[#595959]">
+                  <p>غير شامل الضريبة</p>
+                  <div>•</div>
+                  <p class="plan-duration" data-monthly="30 يوم" data-yearly="365 يوم">30 يوم</p>
+                </div>
+              </div>
+              <div class="mb-6"><a href="/contact"
+                  class="btn btn-primary btn-block rounded-14px h-[52px] text-base font-normal">تجربة مجانية 5 أيام</a>
+              </div>
+              <div class="mb-6">
+                <hr class="text-black/10" />
+              </div>
+              <p class="font-normal text-black text-14px mb-3">المميزات المتضمنة:</p>
+              <ul class="flex-1 mb-7 space-y-2 text-right">
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">بوت الرد الآلي (عادي)</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الترحيب التلقائي</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الرسائل التلقائية</span></li>
+              </ul>
+            </div>
+
+            <!-- باقة سويتش - شوبيفاي -->
+            <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative lg:scale-105">
+              <div
+                class="absolute -top-[19px] pt-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold shadow-md">
+                الأكثر شعبية</div>
+              <div class="flex flex-col items-center gap-3 mb-6">
+                <div class="bg-[#0A381C0D] size-16 rounded-16px center_flex"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true"
+                    class="text-primary text-[2rem]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                      clip-rule="evenodd"></path>
+                  </svg></div>
+                <h3 class="font-semibold text-24px text-black">باقة سويتش - شوبيفاي</h3>
+                <p class="text-base font-normal text-[#595959]">الأفضل للشركات الصغيرة والمتوسطة</p>
+              </div>
+              <div class="my-4 text-center rounded-16px bg-[linear-gradient(180deg,#F8F8F8_0%,#F0F0F0_100%)] p-6">
+                <div class="text-60px font-bold text-primary center_flex gap-2"><span class="price-value"
+                    data-monthly="99" data-yearly="900">99</span> <span class="text-lg font-normal"><img
+                      src="/public_folder/home/ryal.svg" alt="Currency" width="30" height="32" /></span></div>
+                <div class="center_flex gap-4 font-normal text-14px text-[#595959]">
+                  <p>غير شامل الضريبة</p>
+                  <div>•</div>
+                  <p class="plan-duration" data-monthly="30 يوم" data-yearly="365 يوم">30 يوم</p>
+                </div>
+              </div>
+              <div class="mb-6"><a href="/contact"
+                  class="btn btn-primary btn-block rounded-14px h-[52px] text-base font-normal">تجربة مجانية 5 أيام</a>
+              </div>
+              <div class="mb-6">
+                <hr class="text-black/10" />
+              </div>
+              <p class="font-normal text-black text-14px mb-3">المميزات المتضمنة:</p>
+              <ul class="flex-1 mb-7 space-y-2 text-right">
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">بوت الرد الآلي (ذكي)</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">تحويل للموظف</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الترحيب التلقائي</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الرسائل التلقائية</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">لوحة تحكم مخصّصة</span></li>
+                <li class="flex items-center gap-2"><span class="inline-block rounded-full size-5 bg-[#D1D5DC] center_flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" class="text-white size-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></span><span class="text-base font-medium text-14px font-normal text-[#99A1AF] line-through">تحكم توقيت عمل الذكاء الاصطناعي</span></li>
+              </ul>
+            </div>
+
+            <!-- باقة كنترول - شوبيفاي -->
+            <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative">
+              <div class="flex flex-col items-center gap-3 mb-6">
+                <div class="bg-[#0A381C0D] size-16 rounded-16px center_flex"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-primary text-[2rem]"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288l111.5 0L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7l-111.5 0L349.4 44.6z">
+                    </path>
+                  </svg></div>
+                <h3 class="font-semibold text-24px text-black">باقة كنترول - شوبيفاي</h3>
+                <p class="text-base font-normal text-[#595959]">حل متكامل للشركات الكبيرة</p>
+              </div>
+              <div class="my-4 text-center rounded-16px bg-[linear-gradient(180deg,#F8F8F8_0%,#F0F0F0_100%)] p-6">
+                <div class="text-60px font-bold text-primary center_flex gap-2"><span class="price-value"
+                    data-monthly="199" data-yearly="1900">199</span> <span class="text-lg font-normal"><img
+                      src="/public_folder/home/ryal.svg" alt="Currency" width="30" height="32" /></span></div>
+                <div class="center_flex gap-4 font-normal text-14px text-[#595959]">
+                  <p>غير شامل الضريبة</p>
+                  <div>•</div>
+                  <p class="plan-duration" data-monthly="30 يوم" data-yearly="365 يوم">30 يوم</p>
+                </div>
+              </div>
+              <div class="mb-6"><a href="/contact"
+                  class="btn btn-primary btn-block rounded-14px h-[52px] text-base font-normal">تجربة مجانية 5 أيام</a>
+              </div>
+              <div class="mb-6">
+                <hr class="text-black/10" />
+              </div>
+              <p class="font-normal text-black text-14px mb-3">المميزات المتضمنة:</p>
+              <ul class="flex-1 mb-7 space-y-2 text-right">
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">بوت الرد الآلي (ذكي)</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">تحويل للموظف</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الترحيب التلقائي</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الرسائل التلقائية</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">لوحة تحكم مخصّصة</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">تحكم توقيت عمل الذكاء الاصطناعي</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- باقات أخرى Tab -->
+        <div id="other-packages" class="tab-pane hidden">
+          <div class="flex justify-center mb-14">
+            <div
+              class="flex flex-wrap justify-center gap-y-4 bg-white/9 w-fit rounded-40px max-w-md mx-auto p-2.5 backdrop-blur-3xl"
+              id="pricing-tabs-other" role="tablist">
+              <button
+                class="bg-[linear-gradient(179.04deg,#FFFFFF_61.8%,#2EE378_122.92%)] h-[58px] px-20 py-4 rounded-40px text-14px mx-2 font-bold !text-[#1C0531]"
+                data-plan-tab="monthly-other" role="tab" aria-selected="true">شهري</button>
+              <button class="bg-white/4 h-[58px] px-20 py-4 rounded-40px text-14px mx-2 font-bold text-white"
+                data-plan-tab="yearly-other" role="tab" aria-selected="false">سنوي</button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-8">
+            <!-- Same pricing cards as first tab but for Other platforms -->
+            <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative">
+              <div class="flex flex-col items-center gap-3 mb-6">
+                <div class="bg-[#0A381C0D] size-16 rounded-16px center_flex"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="text-primary text-[2rem]"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6l277.2 0c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z">
+                    </path>
+                  </svg></div>
+                <h3 class="font-semibold text-24px text-black">باقة بوت - أخرى</h3>
+                <p class="text-base font-normal text-[#595959]">مثالية للمشاريع الناشئة والأفراد</p>
+              </div>
+              <div class="my-4 text-center rounded-16px bg-[linear-gradient(180deg,#F8F8F8_0%,#F0F0F0_100%)] p-6">
+                <div class="text-60px font-bold text-primary center_flex gap-2"><span class="price-value"
+                    data-monthly="55" data-yearly="500">55</span> <span class="text-lg font-normal"><img
+                      src="/public_folder/home/ryal.svg" alt="Currency" width="30" height="32" /></span></div>
+                <div class="center_flex gap-4 font-normal text-14px text-[#595959]">
+                  <p>غير شامل الضريبة</p>
+                  <div>•</div>
+                  <p class="plan-duration" data-monthly="30 يوم" data-yearly="365 يوم">30 يوم</p>
+                </div>
+              </div>
+              <div class="mb-6"><a href="/contact"
+                  class="btn btn-primary btn-block rounded-14px h-[52px] text-base font-normal">تجربة مجانية 5 أيام</a>
+              </div>
+              <div class="mb-6">
+                <hr class="text-black/10" />
+              </div>
+              <p class="font-normal text-black text-14px mb-3">المميزات المتضمنة:</p>
+              <ul class="flex-1 mb-7 space-y-2 text-right">
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">بوت الرد الآلي (عادي)</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الترحيب التلقائي</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الرسائل التلقائية</span></li>
+              </ul>
+            </div>
+
+            <!-- باقة سويتش - أخرى -->
+            <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative lg:scale-105">
+              <div
+                class="absolute -top-[19px] pt-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold shadow-md">
+                الأكثر شعبية</div>
+              <div class="flex flex-col items-center gap-3 mb-6">
+                <div class="bg-[#0A381C0D] size-16 rounded-16px center_flex"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true"
+                    class="text-primary text-[2rem]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                      clip-rule="evenodd"></path>
+                  </svg></div>
+                <h3 class="font-semibold text-24px text-black">باقة سويتش - أخرى</h3>
+                <p class="text-base font-normal text-[#595959]">الأفضل للشركات الصغيرة والمتوسطة</p>
+              </div>
+              <div class="my-4 text-center rounded-16px bg-[linear-gradient(180deg,#F8F8F8_0%,#F0F0F0_100%)] p-6">
+                <div class="text-60px font-bold text-primary center_flex gap-2"><span class="price-value"
+                    data-monthly="99" data-yearly="900">99</span> <span class="text-lg font-normal"><img
+                      src="/public_folder/home/ryal.svg" alt="Currency" width="30" height="32" /></span></div>
+                <div class="center_flex gap-4 font-normal text-14px text-[#595959]">
+                  <p>غير شامل الضريبة</p>
+                  <div>•</div>
+                  <p class="plan-duration" data-monthly="30 يوم" data-yearly="365 يوم">30 يوم</p>
+                </div>
+              </div>
+              <div class="mb-6"><a href="/contact"
+                  class="btn btn-primary btn-block rounded-14px h-[52px] text-base font-normal">تجربة مجانية 5 أيام</a>
+              </div>
+              <div class="mb-6">
+                <hr class="text-black/10" />
+              </div>
+              <p class="font-normal text-black text-14px mb-3">المميزات المتضمنة:</p>
+              <ul class="flex-1 mb-7 space-y-2 text-right">
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">بوت الرد الآلي (ذكي)</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">تحويل للموظف</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الترحيب التلقائي</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الرسائل التلقائية</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">لوحة تحكم مخصّصة</span></li>
+                <li class="flex items-center gap-2"><span class="inline-block rounded-full size-5 bg-[#D1D5DC] center_flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" class="text-white size-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></span><span class="text-base font-medium text-14px font-normal text-[#99A1AF] line-through">تحكم توقيت عمل الذكاء الاصطناعي</span></li>
+              </ul>
+            </div>
+
+            <!-- باقة كنترول - أخرى -->
+            <div class="rounded-24px border border-[#E5E7EB] bg-white flex flex-col p-8 relative">
+              <div class="flex flex-col items-center gap-3 mb-6">
+                <div class="bg-[#0A381C0D] size-16 rounded-16px center_flex"><svg stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-primary text-[2rem]"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288l111.5 0L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7l-111.5 0L349.4 44.6z">
+                    </path>
+                  </svg></div>
+                <h3 class="font-semibold text-24px text-black">باقة كنترول - أخرى</h3>
+                <p class="text-base font-normal text-[#595959]">حل متكامل للشركات الكبيرة</p>
+              </div>
+              <div class="my-4 text-center rounded-16px bg-[linear-gradient(180deg,#F8F8F8_0%,#F0F0F0_100%)] p-6">
+                <div class="text-60px font-bold text-primary center_flex gap-2"><span class="price-value"
+                    data-monthly="199" data-yearly="1900">199</span> <span class="text-lg font-normal"><img
+                      src="/public_folder/home/ryal.svg" alt="Currency" width="30" height="32" /></span></div>
+                <div class="center_flex gap-4 font-normal text-14px text-[#595959]">
+                  <p>غير شامل الضريبة</p>
+                  <div>•</div>
+                  <p class="plan-duration" data-monthly="30 يوم" data-yearly="365 يوم">30 يوم</p>
+                </div>
+              </div>
+              <div class="mb-6"><a href="/contact"
+                  class="btn btn-primary btn-block rounded-14px h-[52px] text-base font-normal">تجربة مجانية 5 أيام</a>
+              </div>
+              <div class="mb-6">
+                <hr class="text-black/10" />
+              </div>
+              <p class="font-normal text-black text-14px mb-3">المميزات المتضمنة:</p>
+              <ul class="flex-1 mb-7 space-y-2 text-right">
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">بوت الرد الآلي (ذكي)</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">تحويل للموظف</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الترحيب التلقائي</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">الرسائل التلقائية</span></li>
+                <li class="flex items-center gap-2"><span
+                    class="inline-block rounded-full p-1 bg-secondary size-5 center_flex"><svg width="10" height="10"
+                      viewBox="0 0 24 24" fill="white">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg></span><span class="text-base font-medium text-black">لوحة تحكم مخصّصة</span></li>
+                <li class="flex items-center gap-2"><span class="inline-block rounded-full size-5 bg-[#D1D5DC] center_flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" class="text-white size-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></span><span class="text-base font-medium text-14px font-normal text-[#99A1AF] line-through">تحكم توقيت عمل الذكاء الاصطناعي</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
       <section id="is-moatmt-suitable" class="pb-14 pt-28 relative">
         <div class="container">
@@ -864,6 +1650,35 @@
   <!-- Custom JS -->
   <script src="/public_folder/assets/js/main.js"></script>
   <script src="/public_folder/assets/js/splide.js"></script>
+  
+  <!-- Tab Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.tab');
+      const tabPanes = document.querySelectorAll('.tab-pane');
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          const targetTab = this.getAttribute('data-tab');
+          
+          // Remove active class from all tabs
+          tabs.forEach(t => t.classList.remove('tab-active'));
+          
+          // Add active class to clicked tab
+          this.classList.add('tab-active');
+          
+          // Hide all tab panes
+          tabPanes.forEach(pane => pane.classList.add('hidden'));
+          
+          // Show target tab pane
+          const targetPane = document.getElementById(targetTab);
+          if (targetPane) {
+            targetPane.classList.remove('hidden');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

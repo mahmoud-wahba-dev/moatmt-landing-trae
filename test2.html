@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Slider - Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* الـ animation التلقائي */
+        .slider-input {
+            display: none;
+        }
+        .slide {
+            animation: slideAuto 20s infinite;
+        }
+        @keyframes slideAuto {
+            0%, 25% { transform: translateX(0%); }
+            26%, 50% { transform: translateX(-33.333%); }
+            51%, 75% { transform: translateX(-66.666%); }
+            76%, 100% { transform: translateX(0%); }
+        }
+        /* Controls hover stop */
+        input:checked ~ .slider-container .slide { animation-play-state: paused; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-4xl mx-auto">
+        <!-- الـ Slider -->
+        <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <!-- Radio buttons للتحكم -->
+            <input type="radio" id="slide1" name="slider" class="slider-input" checked>
+            <input type="radio" id="slide2" name="slider" class="slider-input">
+            <input type="radio" id="slide3" name="slider" class="slider-input">
+            
+            <!-- الـ Slides container -->
+            <div class="slider-container flex transition-transform duration-1000 ease-in-out">
+                <!-- Slide 1 -->
+                <div class="slide flex-shrink-0 w-full h-96 md:h-[500px] bg-gradient-to-l from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black/20"></div>
+                    <div class="relative z-10 text-center p-8">
+                        <h2 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">السلايدر الأول</h2>
+                        <p class="text-xl md:text-2xl drop-shadow-lg">يتحرّك تلقائياً كل 7 ثواني</p>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="flex-shrink-0 w-full h-96 md:h-[500px] bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center text-white text-4xl font-bold relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black/20"></div>
+                    <div class="relative z-10 text-center p-8">
+                        <h2 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">السلايدر التاني</h2>
+                        <p class="text-xl md:text-2xl drop-shadow-lg">Responsive + RTL جاهز</p>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="flex-shrink-0 w-full h-96 md:h-[500px] bg-gradient-to-l from-orange-500 to-red-600 flex items-center justify-center text-white text-4xl font-bold relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black/20"></div>
+                    <div class="relative z-10 text-center p-8">
+                        <h2 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">السلايدر التالت</h2>
+                        <p class="text-xl md:text-2xl drop-shadow-lg">Tailwind CSS Pure</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Dots -->
+            <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 space-x-reverse">
+                <label for="slide1" class="w-3 h-3 bg-white/50 rounded-full cursor-pointer hover:bg-white transition-all duration-300 block"></label>
+                <label for="slide2" class="w-3 h-3 bg-white/50 rounded-full cursor-pointer hover:bg-white transition-all duration-300 block"></label>
+                <label for="slide3" class="w-3 h-3 bg-white/50 rounded-full cursor-pointer hover:bg-white transition-all duration-300 block"></label>
+            </div>
+
+<!-- Arrows (Optional) -->
+            <label for="slide3" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg cursor-pointer transition-all z-20">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+            </label>
+            <label for="slide2" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg cursor-pointer transition-all z-20">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+            </label>
+        </div>
+    </div>
+</body>
+</html>
