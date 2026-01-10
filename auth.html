@@ -38,10 +38,10 @@
       <div class="pt-12 px-6 lg:px-16 pb-12 ">
         <div class="container">
           <!-- name of each tab group should be unique -->
-          <div class="tabs tabs-box bg-transparent border-0 justify-center">
-            <input type="radio" name="my_tabs_6"
-              class="tab bg-[#E4E4E4] rounded-l-[50px] px-[65px] text-primary font-medium text-24px h-[80px]"
-              aria-label="تسجيل الدخول" checked="checked" />
+          <div class="tabs tabs-box bg-transparent border-0 justify-center gap-4">
+            <input type="radio" name="auth_tabs" id="login_tab"
+              class="tab bg-[#E4E4E4] rounded-[50px] px-[65px] text-primary font-medium text-24px h-[80px]"
+              aria-label="تسجيل الدخول" checked />
             <div class="tab-content justify-center p-6">
 
               <div>
@@ -52,18 +52,18 @@
                   وتنظيم تواصلك مع العملاء.</p>
                 <fieldset class="fieldset border-0 ">
 
-                  <label class=" font-medium text-24px mb-5 text-primary  ">البريد الإلكتروني</label>
+                  <label class="block font-medium text-24px mb-5 text-primary  ">البريد الإلكتروني</label>
                   <input type="email" class="input border-[#D8D8D8] w-full rounded-[10px]  h-[80px] mb-9"
                     placeholder="example@company.com" />
 
                   <div class="">
-                    <label class=" font-medium text-24px mb-5 text-primary  ">كلمة المرور</label>
+                    <label class="block font-medium text-24px mb-5 text-primary  ">كلمة المرور</label>
                     <div class="relative">
                       <input id="password_input" type="password"
                         class=" input border-[#D8D8D8] w-full rounded-[10px]  h-[80px] mb-9" placeholder="••••••••" />
                       <span id="show_password_btn"
                         class="absolute end-9 text-primary top-[20%] size-[34px] cursor-pointer"><img id="eye_icon"
-                         class="size-[34px]" src="/public_folder/auth/eye-opened.svg" alt=""></span>
+                          class="size-[34px]" src="/public_folder/auth/eye-opened.svg" alt=""></span>
                     </div>
                   </div>
 
@@ -82,10 +82,93 @@
               </div>
             </div>
 
-            <input type="radio" name="my_tabs_6"
-              class="tab bg-[#E4E4E4] rounded-l-[50px] px-[65px] text-primary font-medium text-24px h-[80px]"
+            <input type="radio" name="auth_tabs" id="register_tab"
+              class="tab bg-[#E4E4E4] rounded-[50px] px-[65px] text-primary font-medium text-24px h-[80px]"
               aria-label="انشاء حساب جديد" />
-            <div class="tab-content  p-6">انشاء حساب جديد</div>
+            <div class="tab-content p-6">
+              <div>
+                <h1 class="font-medium text-primary text-36px mt-14 text-center mb-4">
+                  حياك معنا 👋
+                </h1>
+                <p class="font-normal text-black text-20px mb-14">أنشئ حسابك وابدأ بتنظيم الردود والحملات والمتابعات في
+                  دقائق.</p>
+
+                <fieldset class="fieldset border-0">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <label class="font-medium text-24px mb-3 text-primary block">اسم المستخدم</label>
+                      <input type="text" class="input border-[#D8D8D8] w-full rounded-[10px] h-[80px]"
+                        placeholder="اسم المستخدم" />
+                    </div>
+                    <div>
+                      <label class="font-medium text-24px mb-3 text-primary block">الاسم كامل</label>
+                      <input type="text" class="input border-[#D8D8D8] w-full rounded-[10px] h-[80px]"
+                        placeholder="ادخل الاسم كامل" />
+                    </div>
+                  </div>
+
+                  <div class="mb-6">
+                    <label class="font-medium text-24px mb-3 text-primary block">البريد الإلكتروني</label>
+                    <input type="email" class="input border-[#D8D8D8] w-full rounded-[10px] h-[80px]"
+                      placeholder="example@company.com" />
+                  </div>
+
+                  <div class="mb-6">
+                    <label class="font-medium text-24px mb-3 text-primary block">رقم الواتساب</label>
+                    <div class="flex gap-4">
+                      <select class="select border-[#D8D8D8] rounded-[10px] h-[80px] min-w-[120px]">
+                        <option selected>+966</option>
+                        <option>+971</option>
+                        <option>+965</option>
+                        <option>+974</option>
+                      </select>
+                      <input type="tel" class="input border-[#D8D8D8] w-full rounded-[10px] h-[80px]"
+                        placeholder="0 رقم الجوال بدون" />
+                    </div>
+                  </div>
+
+                  <div class="mb-6">
+                    <label class="font-medium text-24px mb-3 text-primary block">كلمة المرور</label>
+                    <div class="relative">
+                      <input id="register_password_input" type="password"
+                        class="input border-[#D8D8D8] w-full rounded-[10px] h-[80px]" placeholder="••••••••" />
+                      <span id="register_show_password_btn"
+                        class="absolute end-9 text-primary top-[20%] size-[34px] cursor-pointer"><img
+                          id="register_eye_icon" class="size-[34px]" src="/public_folder/auth/eye-opened.svg"
+                          alt=""></span>
+                    </div>
+                  </div>
+
+                  <div class="mb-6">
+                    <label class="font-medium text-24px mb-3 text-primary block">تأكيد كلمة المرور</label>
+                    <div class="relative">
+                      <input id="register_confirm_password_input" type="password"
+                        class="input border-[#D8D8D8] w-full rounded-[10px] h-[80px]" placeholder="••••••••" />
+                      <span id="register_show_confirm_btn"
+                        class="absolute end-9 text-primary top-[20%] size-[34px] cursor-pointer"><img
+                          id="register_eye_icon_confirm" class="size-[34px]" src="/public_folder/auth/eye-opened.svg"
+                          alt=""></span>
+                    </div>
+                  </div>
+
+                  <div class="mb-6">
+                    <label class="font-medium text-24px mb-3 text-primary block">المنطقة الزمنية</label>
+                    <select class="select border-[#D8D8D8] rounded-[10px] h-[80px] w-full">
+                      <option selected>Asia/Riyadh</option>
+                      <option>Asia/Dubai</option>
+                      <option>UTC</option>
+                    </select>
+                  </div>
+
+                  <div class="flex items-center gap-3 mb-10">
+                    <input id="terms_checkbox" type="checkbox" class="checkbox" />
+                    <label for="terms_checkbox" class="font-medium text-primary text-20px">أوافق على الشروط والأحكام</label>
+                  </div>
+
+                  <button class="btn btn-neutral rounded-10px h-[74px] font-semibold text-20px w-full">انشاء حساب</button>
+                </fieldset>
+              </div>
+            </div>
 
 
           </div>
