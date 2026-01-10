@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مؤتمت بوت - أتمتة خدمات العملاء والتسويق للمشاريع الصغيرة والمتوسطة</title>
+  <meta name="description"
+    content="منصة مؤتمت بوت تساعدك على إنشاء روبوتات دردشة ذكية لأتمتة تفاعلات العملاء، تحسين التسويق، وزيادة المبيعات بسهولة.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/public_folder/assets/css/styles.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="antialiased h-100vh">
+
+
+
+  <header>
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="bg-cover bg-center" style="background-image: url('/public_folder/auth/login_bg.webp');">
+        <!-- <img src="/public_folder/auth/login_bg.webp" alt="Login Background" class="w-full h-full object-cover" /> -->
+      </div>
+
+      <div class="pt-12 px-6 lg:px-16 pb-12 ">
+        <div class="container">
+          <!-- name of each tab group should be unique -->
+          <div class="tabs tabs-box bg-transparent border-0 justify-center">
+            <input type="radio" name="my_tabs_6"
+              class="tab bg-[#E4E4E4] rounded-l-[50px] px-[65px] text-primary font-medium text-24px h-[80px]"
+              aria-label="تسجيل الدخول" checked="checked" />
+            <div class="tab-content justify-center p-6">
+
+              <div>
+                <h1 class="font-medium text-primary text-36px mt-14 text-center mb-4">
+                  مرحبًا بعودتك 👋
+                </h1>
+                <p class="font-normal text-black text-20px mb-14">سجّل الدخول لإدارة محادثات واتساب، وأتمتة الردود،
+                  وتنظيم تواصلك مع العملاء.</p>
+                <fieldset class="fieldset border-0 ">
+
+                  <label class=" font-medium text-24px mb-5 text-primary  ">البريد الإلكتروني</label>
+                  <input type="email" class="input border-[#D8D8D8] w-full rounded-[10px]  h-[80px] mb-9"
+                    placeholder="example@company.com" />
+
+                  <div class="">
+                    <label class=" font-medium text-24px mb-5 text-primary  ">كلمة المرور</label>
+                    <div class="relative">
+                      <input id="password_input" type="password"
+                        class=" input border-[#D8D8D8] w-full rounded-[10px]  h-[80px] mb-9" placeholder="••••••••" />
+                      <span id="show_password_btn"
+                        class="absolute end-9 text-primary top-[20%] size-[34px] cursor-pointer"><img id="eye_icon"
+                         class="size-[34px]" src="/public_folder/auth/eye-opened.svg" alt=""></span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-between mb-16">
+                    <label class="label font-medium text-primary text-20px">
+                      <input type="checkbox" checked="checked" class="checkbox " />
+                      تذكرني
+                    </label>
+                    <div>
+                      <a href="#" class="font-bold text-primary text-20px underline">هل نسيت كلمة المرور؟</a>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-neutral rounded-10px h-[74px] font-semibold text-20px">تسجيل الدخول</button>
+                </fieldset>
+              </div>
+            </div>
+
+            <input type="radio" name="my_tabs_6"
+              class="tab bg-[#E4E4E4] rounded-l-[50px] px-[65px] text-primary font-medium text-24px h-[80px]"
+              aria-label="انشاء حساب جديد" />
+            <div class="tab-content  p-6">انشاء حساب جديد</div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+
+  <!-- Custom JS -->
+  <script src="/public_folder/assets/js/main.js"></script>
+  <script src="/public_folder/assets/js/auth.js"></script>
+
+</body>
+
+</html>
