@@ -413,7 +413,7 @@ body {
 /* Tab Active/Inactive State Styling */
 .tab-label {
   transition: all 0.3s ease-in-out;
-  background-color: #0A381C !important;
+  background-color: #0a381c !important;
   color: #ffffff !important;
 }
 
@@ -428,27 +428,48 @@ body {
   transition: fill 0.3s ease-in-out;
 }
 
-/* Use :has() to style label based on following checked input */
-/* Active tab - label followed by checked input */
-.tabs-boxed:has(#tab1:checked) label[for="tab1"],
-.tabs-boxed:has(#tab2:checked) label[for="tab2"],
-.tabs-boxed:has(#tab3:checked) label[for="tab3"],
-.tabs-boxed:has(#tab4:checked) label[for="tab4"] {
-  background-color: #CFF7EE !important;
-  color: #004D5A !important;
-  /* border-bottom: 2px solid #2ee378 !important; */
+/* Active Tab 1 - باقات سلة */
+.tabs-boxed:has(#tab1:checked) label[for="tab1"] {
+  background-color: #cff7ee !important;
+  color: #004d5a !important;
 }
 
-/* Active tab SVG color */
 .tabs-boxed:has(#tab1:checked) label[for="tab1"] svg path,
-.tabs-boxed:has(#tab1:checked) label[for="tab1"] svg g path,
+.tabs-boxed:has(#tab1:checked) label[for="tab1"] svg g path {
+  fill: #004d5a !important;
+}
+
+/* Active Tab 2 - باقات زد */
+.tabs-boxed:has(#tab2:checked) label[for="tab2"] {
+  background-color: #3c1c54 !important;
+  color: #ffffff !important;
+}
+
 .tabs-boxed:has(#tab2:checked) label[for="tab2"] svg path,
-.tabs-boxed:has(#tab2:checked) label[for="tab2"] svg g path,
+.tabs-boxed:has(#tab2:checked) label[for="tab2"] svg g path {
+  fill: #ffffff !important;
+}
+
+/* Active Tab 3 - باقات شوبيفاي */
+.tabs-boxed:has(#tab3:checked) label[for="tab3"] {
+  background-color: #96bf48 !important;
+  color: #ffffff !important;
+}
+
 .tabs-boxed:has(#tab3:checked) label[for="tab3"] svg path,
-.tabs-boxed:has(#tab3:checked) label[for="tab3"] svg g path,
+.tabs-boxed:has(#tab3:checked) label[for="tab3"] svg g path {
+  fill: #ffffff !important;
+}
+
+/* Active Tab 4 - باقات الاعمال */
+.tabs-boxed:has(#tab4:checked) label[for="tab4"] {
+  background-color: #2EE378 !important;
+  color: white !important;
+}
+
 .tabs-boxed:has(#tab4:checked) label[for="tab4"] svg path,
 .tabs-boxed:has(#tab4:checked) label[for="tab4"] svg g path {
-  fill: #004D5A !important;
+  fill: white !important;
 }
 
 /* Content visibility */
