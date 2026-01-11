@@ -1,6 +1,7 @@
 /* Custom Font Sizes */
 html {
   font-size: clamp(12px, 1vw + 0.5rem, 16px);
+  scroll-behavior: smooth;
 }
 
 :root {
