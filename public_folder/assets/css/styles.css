@@ -409,3 +409,60 @@ body {
 .iti__country-list {
   inset-inline-end: 0;
 }
+
+/* Tab Active/Inactive State Styling */
+.tab-label {
+  transition: all 0.3s ease-in-out;
+  background-color: #0A381C !important;
+  color: #ffffff !important;
+}
+
+.tab-label:hover {
+  background-color: #0d4826 !important;
+}
+
+/* Default SVG color - white for inactive tabs */
+.tab-label svg path,
+.tab-label svg g path {
+  fill: #ffffff !important;
+  transition: fill 0.3s ease-in-out;
+}
+
+/* Use :has() to style label based on following checked input */
+/* Active tab - label followed by checked input */
+.tabs-boxed:has(#tab1:checked) label[for="tab1"],
+.tabs-boxed:has(#tab2:checked) label[for="tab2"],
+.tabs-boxed:has(#tab3:checked) label[for="tab3"],
+.tabs-boxed:has(#tab4:checked) label[for="tab4"] {
+  background-color: #CFF7EE !important;
+  color: #004D5A !important;
+  /* border-bottom: 2px solid #2ee378 !important; */
+}
+
+/* Active tab SVG color */
+.tabs-boxed:has(#tab1:checked) label[for="tab1"] svg path,
+.tabs-boxed:has(#tab1:checked) label[for="tab1"] svg g path,
+.tabs-boxed:has(#tab2:checked) label[for="tab2"] svg path,
+.tabs-boxed:has(#tab2:checked) label[for="tab2"] svg g path,
+.tabs-boxed:has(#tab3:checked) label[for="tab3"] svg path,
+.tabs-boxed:has(#tab3:checked) label[for="tab3"] svg g path,
+.tabs-boxed:has(#tab4:checked) label[for="tab4"] svg path,
+.tabs-boxed:has(#tab4:checked) label[for="tab4"] svg g path {
+  fill: #004D5A !important;
+}
+
+/* Content visibility */
+.tabs-boxed:has(#tab1:checked) .tab-content:nth-of-type(1),
+.tabs-boxed:has(#tab2:checked) .tab-content:nth-of-type(2),
+.tabs-boxed:has(#tab3:checked) .tab-content:nth-of-type(3),
+.tabs-boxed:has(#tab4:checked) .tab-content:nth-of-type(4) {
+  display: block !important;
+}
+
+.tabs-boxed .tab-content {
+  display: none !important;
+}
+
+.tabs-boxed:has(#tab1:checked) .tab-content:nth-of-type(1) {
+  display: block !important;
+}
