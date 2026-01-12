@@ -464,7 +464,7 @@ body {
 
 /* Active Tab 4 - باقات الاعمال */
 .tabs-boxed:has(#tab4:checked) label[for="tab4"] {
-  background-color: #2EE378 !important;
+  background-color: #2ee378 !important;
   color: white !important;
 }
 
@@ -487,4 +487,11 @@ body {
 
 .tabs-boxed:has(#tab1:checked) .tab-content:nth-of-type(1) {
   display: block !important;
+}
+
+.tab-label svg {
+  @media screen and (max-width: 640px) {
+    width: 35px;
+    height: auto;
+  }
 }
